@@ -8,7 +8,8 @@ import * as PDFJS from "pdfjs-dist/legacy/build/pdf";
 import { pdfjs } from "pdfjs-dist";
 
 // Set the worker path
-pdfjs.GlobalWorkerOptions.workerSrc = `/pdf.worker.js`;
+// pdfjs.GlobalWorkerOptions.workerSrc = `/pdf.worker.js`;
+PDFJS.GlobalWorkerOptions.workerSrc = `/pdf.worker.js`;
 
 export default async function handler(req, res) {
   // 1. check for POST call
