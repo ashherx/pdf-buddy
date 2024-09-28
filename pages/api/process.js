@@ -6,11 +6,10 @@ import { initialize } from "@/src/pinecone";
 import { Pinecone } from "@pinecone-database/pinecone";
 // import * as PDFJS from "pdfjs-dist/legacy/build/pdf";
 // import { pdfjs } from "pdfjs-dist";
-import * as PDFJS from "../../public/pdf.worker";
 
-// Set the worker path
-// pdfjs.GlobalWorkerOptions.workerSrc = `/pdf.worker.js`;
-// PDFJS.GlobalWorkerOptions.workerSrc = `/pdf.worker.js`;
+import * as PDFJS from "pdfjs-dist";
+
+
 
 export default async function handler(req, res) {
   // 1. check for POST call
