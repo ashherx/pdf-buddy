@@ -4,7 +4,6 @@ import { connectDB, disconnectDB } from "@/src/db";
 import { getEmbeddings } from "@/src/openaiServices";
 import { initialize } from "@/src/pinecone";
 import { Pinecone } from "@pinecone-database/pinecone";
-
 import * as PDFJS from "pdfjs-dist/legacy/build/pdf";
 import { pdfjs } from "pdfjs-dist";
 
