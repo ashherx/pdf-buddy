@@ -5,6 +5,8 @@ import { getEmbeddings } from "@/src/openaiServices";
 import { initialize } from "@/src/pinecone";
 import { Pinecone } from "@pinecone-database/pinecone";
 
+PDFJS.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${PDFJS.version}/pdf.worker.js`;
+
 export default async function handler(req, res) {
   // 1. check for POST call
   if (req.method !== "POST") {
