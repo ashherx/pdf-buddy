@@ -7,7 +7,7 @@ async function connectDB() {
     return;
   }
 
-  const MONGO_URI = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.janumtr.mongodb.net/pdfbuddy?retryWrites=true&w=majority&appName=Cluster0`;
+  const MONGO_URI = `mongodb+srv://${process.env.MY_DB_USERNAME}:${process.env.MY_DB_PASSWORD}@cluster0.janumtr.mongodb.net/pdfbuddy?retryWrites=true&w=majority&appName=Cluster0`;
 
   try {
     await mongoose.connect(MONGO_URI, {

@@ -26,7 +26,7 @@ export default async function handler(req, res) {
 	// 5. initialize pinecone
 	// await initialize()
   
-	let pinecone = new Pinecone({ apiKey: process.env.PDB_KEY });
+	let pinecone = new Pinecone({ apiKey: process.env.MY_PDB_KEY });
   
 	// 6. connect to index
 	const index = pinecone.index(myFile.vectorIndex);

@@ -12,7 +12,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    let pinecone = new Pinecone({ apiKey: process.env.PDB_KEY });
+    let pinecone = new Pinecone({ apiKey: process.env.MY_PDB_KEY });
 
     // 2. connect to mongodb
     await connectDB();

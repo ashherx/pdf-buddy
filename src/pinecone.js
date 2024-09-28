@@ -4,10 +4,10 @@
 
 // export const initialize = async () => {
 //   // pinecone = new Pinecone({
-//   //   apiKey: process.env.PDB_KEY,
+//   //   apiKey: process.env.MY_PDB_KEY,
 //   // });
 //   await pinecone.init({
-//     apiKey: process.env.PDB_KEY,
+//     apiKey: process.env.MY_PDB_KEY,
 //   });
 //   console.log("pinecone initialized");
 // };
